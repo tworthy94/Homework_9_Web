@@ -8,140 +8,54 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lato", sans-serif
-    }
-    
-    .w3-bar,
-    h1,
-    button {
-        font-family: "Montserrat", sans-serif
-    }
-    
-    .fa-anchor,
-    .fa-coffee {
-        font-size: 200px
-    }
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="resources/assets/css/style.css">
 
 <body>
-
-    <!-- Navbar -->
-    <style>
-        .navbar {
-            overflow: hidden;
-            background-color: white;
-        }
-        
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: black;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-        
-        .navbar a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: #0080ff;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
     </head>
 
     <body>
 
-        <div class="navbar">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="comp.html">Comparison</a>
             <a href="data.html">Weather Data</a>
-            <div class="dropdown">
-                <button class="dropbtn">Graphics
-                    <i class="fa fa-caret-down"></i>
+            <div class="dropdown1">
+                <button class="dropbtn">Plots <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="temp.html">Max Temperature</a>
+                    <a href="temp.html" class="active">Max Temperature</a>
                     <a href="humidity.html">Humidity</a>
                     <a href="cloudiness.html">Cloudiness</a>
                     <a href="wind.html">Wind Speed</a>
                 </div>
             </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </body>
 
     <!-- Header -->
-    <header class="w3-container w3-blue w3-center" style="height: 175px">
+    <header class="w3-container w3-blue w3-center">
         <h1 class="w3-margin w3-jumbo">Maximum Temperature</h1>
-        <p class="w3-xlarge">Here you can see today's max temperature compared to each city's latitude</p>
+        <p class="w3-large">Here you can see today's max temperature compared to each city's latitude</p>
     </header>
 
     <!-- Visualization Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="w3-content w3-center">
-            <img src="Resources/assets/images/Fig1.png" style="opacity: 0.8;"></i>
-            <style>
-                img {
-                    max-width: 125%;
-                    height: auto;
-                }
-            </style>
-
-            <!-- Data -->
-            <div class="w3-container w3-blue w3-center">
-                <h5 class="w3-xlarge">The trend we see here is that distance from the equator has a direct effect on the day's max temperature. The closer you get to the equator, the higher the max temperature gets. We like to call this the "Stripometer". Because the hotter it gets, the more clothes come off. People near the equator must be naked all the time... right? Or maybe it could be caused by all the tequila...This is how data science works sheeple!
-      </h5>
-            </div>
+    <div class="w3-center">
+        <img src="Resources/assets/images/Fig1.png" style="opacity: 0.8;">
+        <!-- Data -->
+        <div class="w3-container w3-blue w3-center">
+            <h5 class="w3-large">The trend we see here is that distance from the equator has a direct effect on the
+                day's max temperature. The closer you get to the equator, the higher the max temperature gets. We like
+                to call this the "Stripometer". Because the hotter it gets, the more clothes come off. People near the
+                equator must be naked all the time... right? Or maybe it could be caused by all the tequila...This is
+                how data science works sheeple!
+            </h5>
         </div>
     </div>
+    <script src="resources/assets/js/index.js"></script>
 </body>
+
+
 
 </html>
